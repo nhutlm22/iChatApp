@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/mauchinh_dark">
+
+    <androidx.appcompat.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_editprofile"
+        android:background="@color/bg_home"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:fitsSystemWindows="true"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="16dp">
+
+            <ImageView
+                android:id="@+id/ivBack"
+                android:layout_width="10dp"
+                android:layout_height="14dp"
+                android:background="@drawable/ic_back"
+                android:layout_marginRight="16dp"
+                android:layout_alignParentTop="true"/>
+
+            <TextView
+                android:id="@+id/tvEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arialbd"
+                android:text="Edit profile"
+                android:layout_gravity="center"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:layout_toRightOf="@+id/ivBack"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvSave"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arialbd"
+                android:text="Save"
+                android:textSize="18sp"
+                android:layout_marginRight="16dp"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/ivAvatar"
+                android:src="@drawable/dv"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/ic_photo_camera"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_camera_account"
+                android:padding="4dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="6dp"
+                android:layout_marginBottom="6dp"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/arialbd"
+                android:text="Đen Vâu"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/ari"
+                    android:textStyle="italic"
+                    android:text="denvau123@gmail.com"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"/>
+                
+                <ImageView
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/ic_edit"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"/>
+
+            </LinearLayout>
+                
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ari"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/botron_editprofile"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="denvau123"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ari"
+                android:drawableLeft="@drawable/ic_user"
+                android:paddingLeft="16dp"
+                android:drawablePadding="12sp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full name"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ari"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/botron_editprofile"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Đen Văn Vâu"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ari"
+                android:drawableLeft="@drawable/ic_user"
+                android:paddingLeft="16dp"
+                android:drawablePadding="12sp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="@color/white"
+            android:fontFamily="@font/ari"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/botron_editprofile"
+            android:orientation="vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0123456789"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ari"
+                android:drawableLeft="@drawable/ic_phone"
+                android:paddingLeft="16dp"
+                android:drawablePadding="12sp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:hintEnabled="true"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            app:hintTextColor="@color/white">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:fontFamily="@font/arialbd"-->
+<!--                android:hint="Username"-->
+<!--                android:background="@drawable/botron_editprofile"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:textColorHint="@color/white"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:drawableLeft="@drawable/ic_user"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:drawablePadding="16dp"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:hintEnabled="true"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            app:hintTextColor="@color/white">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:fontFamily="@font/arialbd"-->
+<!--                android:hint="Full name"-->
+<!--                android:background="@drawable/botron_editprofile"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:drawableLeft="@drawable/ic_user"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:drawablePadding="16dp"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:hintEnabled="true"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:textColorHint="@color/white"-->
+<!--            android:layout_marginTop="4dp"-->
+<!--            app:hintTextColor="@color/white">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:fontFamily="@font/arialbd"-->
+<!--                android:hint="Phone"-->
+<!--                android:background="@drawable/botron_editprofile"-->
+<!--                android:textSize="18sp"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:drawableTint="@color/white"-->
+<!--                android:drawableLeft="@drawable/ic_phone"-->
+<!--                android:paddingLeft="16dp"-->
+<!--                android:drawablePadding="16dp"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/botron_editprofile"
+            android:layout_marginTop="14dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12/09/2000"
+                android:textColor="@color/white"
+                android:fontFamily="@font/ari"
+                android:drawableLeft="@drawable/ic_calender"
+                android:paddingLeft="16dp"
+                android:drawablePadding="12sp"
+                android:textSize="18sp"/>
+
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose gender"
+                android:layout_marginTop="14dp"
+                android:textColor="@color/white"
+                android:layout_marginBottom="12dp"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="32dp"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"
+                    android:layout_marginRight="32dp"
+                    android:text="Female"/>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Other"
+                    android:textColor="@color/white"
+                    android:buttonTint="@color/white"/>
+
+            </RadioGroup>
+
+    </LinearLayout>
+
+</LinearLayout>
